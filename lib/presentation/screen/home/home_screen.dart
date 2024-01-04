@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:widgets_app/config/menu/menu_items.dart';
 import 'package:widgets_app/presentation/screen/buttons/button_screen.dart';
 
-class HomeScreeen extends StatelessWidget {
-  const HomeScreeen({super.key});
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -46,11 +47,7 @@ class _CustomListTile extends StatelessWidget {
       leading: Icon(item.icon, color: colors.primary),
       trailing: Icon(Icons.arrow_forward_ios, color: colors.primary),
       onTap: () {
-        Navigator.of(context).push(
-          MaterialPageRoute(
-            builder: (context) => const ButtonsScreen(),
-          ),
-        );
+        context.push( item.route );
       },
     );
   }
