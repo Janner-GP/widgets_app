@@ -21,4 +21,5 @@ const appMenuItems = <MenuItem>[
   MenuItem(title: 'Progreso', subtitle: 'Generales y controlados', route: '/progress', icon: Icons.credit_card),
   MenuItem(title: 'Snackbars y Dialogos', subtitle: 'Indicadores en pantalla', route: '/snackbars', icon: Icons.info_outline_rounded),
   MenuItem(title: 'Contendor animado', subtitle: 'Contenedor animado con varios colores y formas', route: '/animated', icon: Icons.animation_rounded),
+  MenuItem(title: 'UI Controls', subtitle: 'Elementos utiles para las interfaces de usuario', route: '/ui-controls', icon: Icons.animation_rounded),
 ];
