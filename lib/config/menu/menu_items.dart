@@ -23,4 +23,5 @@ const appMenuItems = <MenuItem>[
   MenuItem(title: 'Contendor animado', subtitle: 'Contenedor animado con varios colores y formas', route: '/animated', icon: Icons.animation_rounded),
   MenuItem(title: 'UI Controls', subtitle: 'Elementos utiles para las interfaces de usuario', route: '/ui-controls', icon: Icons.design_services_outlined),
   MenuItem(title: 'App Tutorials', subtitle: 'Paso a paso para una aplicacion', route: '/app-tutorial', icon: Icons.class_outlined),
+  MenuItem(title: 'Infinte Scroll', subtitle: 'Como hacer un infinite scroll con refresh', route: '/infinite-scroll', icon: Icons.list_alt_outlined),
 ];
