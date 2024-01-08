@@ -16,6 +16,11 @@ final appRoute = GoRouter(
     ),
 
     GoRoute(
+      path: '/counter',
+      builder: (context, state) => const CounterScreen(),
+    ),
+
+    GoRoute(
       path: '/cards',
       builder: (context, state) => const CardScreen(),
     ),
@@ -30,24 +35,29 @@ final appRoute = GoRouter(
       builder: (context, state) => const AppTutorialScreen(),
     ),
 
-     GoRoute(
+    GoRoute(
       path: '/ui-controls',
       builder: (context, state) => const UiControlScreen(),
     ),
 
-     GoRoute(
+    GoRoute(
       path: '/snackbars',
       builder: (context, state) => const SnackbarScreen(),
     ),
 
-     GoRoute(
+    GoRoute(
       path: '/progress',
       builder: (context, state) => const ProgressScreen(),
     ),
 
-     GoRoute(
+    GoRoute(
       path: '/infinite-scroll',
       builder: (context, state) => const InfiniteScrollScreen(),
+    ),
+
+    GoRoute(
+      path: '/theme-change',
+      builder: (context, state) => const ThemeChangeScreen(),
     )
 
   ]

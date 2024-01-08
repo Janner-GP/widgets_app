@@ -1,17 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:widgets_app/config/menu/menu_items.dart';
+import 'package:widgets_app/presentation/widgets/drawers_widgets.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
   @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  @override
   Widget build(BuildContext context) {
+
+    final scaffoldKey = GlobalKey<ScaffoldState>();
+
     return Scaffold(
-        appBar: AppBar(
-          title: const Text('Widgets App'),
-        ),
-        body: _HomeView());
+      key: scaffoldKey,
+      appBar: AppBar(
+        title: const Text('Widgets App'),
+      ),
+      body: _HomeView(),
+      drawer: DrawerWidget(scaffoldKey: scaffoldKey),
+    );
   }
 }
 
